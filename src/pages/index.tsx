@@ -20,8 +20,7 @@ const Index = () => (
     <Hero />
     <Main>
       <Text color="text">
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>TypeScript</Code>.
+        This has Typescript support and login with ORCID function
       </Text>
 
       <List spacing={3} my={0} color="text">
@@ -29,17 +28,17 @@ const Index = () => (
           <ListIcon as={CheckCircleIcon} color="green.500" />
           <ChakraLink
             isExternal
-            href="https://chakra-ui.com"
+            href="https://opsci.com"
             flexGrow={1}
             mr={2}
           >
-            Chakra UI <LinkIcon />
+            Opscientia <LinkIcon />
           </ChakraLink>
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
+          <ChakraLink isExternal href="https://orcid.org" flexGrow={1} mr={2}>
+            ORCID <LinkIcon />
           </ChakraLink>
         </ListItem>
       </List>
@@ -47,7 +46,7 @@ const Index = () => (
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Next ❤️ Chakra</Text>
+      <Text>OpSci ❤️ Verse</Text>
     </Footer>
     <CTA />
   </Container>

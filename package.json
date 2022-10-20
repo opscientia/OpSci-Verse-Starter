@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next -p 5000",
+    "build": "next build ",
+    "start": "next start -p 5000"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
@@ -11,8 +11,16 @@
     "@chakra-ui/theme-tools": "^2.0.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.9.0",
+    "@types/mongoose": "^5.11.97",
+    "bcrypt": "^5.1.0",
+    "cookies-next": "^2.1.1",
+    "cors": "^2.8.5",
     "framer-motion": "^6.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
     "next": "latest",
+    "passport": "^0.6.0",
+    "passport-orcid": "^0.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
