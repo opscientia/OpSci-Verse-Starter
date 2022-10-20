@@ -27,7 +27,7 @@ export const CTA = () => (
     <Button
       as={ChakraLink}
       isExternal
-      href="https://github.com/vercel/next.js/blob/canary/examples/with-chakra-ui-typescript"
+      href="https://github.com/Rashmi-278/OpSci-Verse-Starter"
       variant="solid"
       colorScheme="green"
       rounded="button"
