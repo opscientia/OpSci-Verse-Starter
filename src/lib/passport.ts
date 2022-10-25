@@ -24,6 +24,7 @@ passport.use(
             orcid: profile.orcid,
             username: profile.name,
             accessToken,
+            refreshToken,
             date_joined: Date.now()
           });
           await newUser.save();
@@ -40,6 +41,7 @@ passport.use(
           done(null, newUser, { message: "Auth successful", token });
         } else {
           // login existing user
+          // TODO renew accesstoken using refresh token after 60days
           console.log("existing user" + obj);
 
           const token = await jwt.sign(
