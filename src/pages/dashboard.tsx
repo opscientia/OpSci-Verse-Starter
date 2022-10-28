@@ -5,7 +5,6 @@ import connect from "../lib/database";
 import jwt from "jsonwebtoken";
 import User from "../models/Users";
 import { useRouter } from "next/router";
-import { Box } from "@chakra-ui/react";
 
 function Dashboard({ username, orcid, records }) {
   const router = useRouter();
@@ -17,9 +16,7 @@ function Dashboard({ username, orcid, records }) {
 
   return (
     <div>
-      <Box>
         <title>Dashboard</title>
-      </Box>
       <div>Welcome {username}!</div>
       <div>{orcid}</div>
       Given name:
@@ -85,3 +82,4 @@ export async function getServerSideProps({ req, res }) {
 }
 
 export default Dashboard;
+
