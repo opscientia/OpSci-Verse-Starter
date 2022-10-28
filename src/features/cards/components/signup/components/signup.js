@@ -10,13 +10,13 @@ import {
   FormControlLabel,
 } from "@mui/material";
 import React from "react";
-import IconUrl from "src/utils/Icon";
+import IconUrl from "../utils/Icon";
 import SignupCardStyled from "./overrides/signupCardStyle";
 import { useFormik, Form, FormikProvider } from 'formik';
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import { useDispatch } from 'react-redux';
 import { LoadingButton } from '@mui/lab';
-import { userSignup } from 'src/redux/userSlice';
+import { userSignup } from '../redux/userSlice';
 import { Link, useNavigate } from "react-router-dom";
 
 function SigninCard() {

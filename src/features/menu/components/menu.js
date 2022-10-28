@@ -14,7 +14,7 @@ import MenuStyled from './overrides/menuStyle';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useNavigate } from 'react-router-dom';
-import IconUrl from 'src/utils/Icon';
+import IconUrl from '../utils/Icon';
 export default function Menu({ menu }) {
   const [collapse, setcollapse] = React.useState(null);
   const navigate = useNavigate();

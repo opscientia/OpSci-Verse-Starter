@@ -3,7 +3,7 @@ import TestmonialStyled from "./overrides/testmonialStyle";
 import Iframe from "react-iframe";
 import { Box, Typography, Button, Stack, Grid } from "@mui/material";
 import { Container } from "@mui/material";
-import { TestmonialCard } from "src/features/cards";
+import { TestmonialCard } from "../features/cards";
 import Slider from "react-slick";
 const settings = {
   dots: true,

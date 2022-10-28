@@ -6,9 +6,9 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
 import { Link } from "react-router-dom";
-import { Menu } from "src/features/menu";
-import * as menu from "src/features/base";
-import Icon from "src/utils/Icon";
+import { Menu } from "../features/menu";
+import * as menu from "../features/base";
+import Icon from "../utils/Icon";
 import { Stack, Button, Container } from '@mui/material';
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;

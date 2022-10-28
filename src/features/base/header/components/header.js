@@ -1,16 +1,16 @@
 import * as React from 'react';
 import Toolbar from '@mui/material/Toolbar';
-import Icon from 'src/utils/Icon';
+import Icon from '../utils/Icon';
 import { Link } from 'react-router-dom';
 import HeaderStyled from './overrides/headerStyle';
 import { Box, Fab, IconButton } from '@mui/material';
-import { Menu } from 'src/features/menu';
+import { Menu } from '../features/menu';
 import * as menu from './config';
 import { useNavigate } from 'react-router-dom';
-import useResponsive from 'src/hooks/useResponsive';
-import { MobileDialog } from 'src/features/dialog';
+import useResponsive from '../hooks/useResponsive';
+import { MobileDialog } from '../features/dialog';
 import { useSelector } from 'react-redux';
-import { userSelector } from 'src/redux/userSlice';
+import { userSelector } from '../redux/userSlice';
 import MenuPopover from './menuPopover';
 export default function BasicAppBar() {
   const { isAuthentic, user } = useSelector(userSelector);

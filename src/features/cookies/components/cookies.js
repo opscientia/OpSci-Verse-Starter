@@ -9,10 +9,10 @@ import {
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CookiesStyled from './overrides/cookiesStyle';
-import useWindowSize from 'src/hooks/windowResize';
-import useResponsive from 'src/hooks/useResponsive';
+import useWindowSize from '../hooks/windowResize';
+import useResponsive from '../hooks/useResponsive';
 
-import Icon from 'src/utils/Icon';
+import Icon from '../utils/Icon';
 function Cookies() {
   const isDesktop = useResponsive("up", "md")
   const theme = useTheme();

@@ -1,7 +1,7 @@
 import React from "react";
 import TestmonialStyled from "./overrides/testmonialStyle";
 import { Typography, CardContent, Box, } from "@mui/material";
-import Icon from "src/utils/Icon";
+import Icon from "../utils/Icon";
 function DonateCard() {
   return (
     <TestmonialStyled>

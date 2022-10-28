@@ -8,8 +8,8 @@ import {
   IconButton,
   Grid,
 } from "@mui/material";
-import useWindowSize from "src/hooks/windowResize";
-import Icon from "src/utils/Icon";
+import useWindowSize from "../../../../hooks/windowResize";
+import Icon from "../../../../utils/Icon";
 function Hero() {
   const [offSetLeft, setOffSetLeft] = React.useState(0);
   const heroRef = useRef(null);

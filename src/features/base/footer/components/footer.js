@@ -12,14 +12,14 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Icon from 'src/utils/Icon';
+import Icon from '../utils/Icon';
 import FooterStyled from './overrides/footerStyle';
 import {
   nav1,
   nav2,
   navicon,
   buttons,
-} from 'src/features/base/footer/components/config';
+} from '../features/base/footer/components/config';
 
 function Footer() {
   return (

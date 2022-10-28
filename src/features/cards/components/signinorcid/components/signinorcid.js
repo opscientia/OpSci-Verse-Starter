@@ -1,6 +1,6 @@
 import { Box, CardContent, Typography, Stack, Button } from "@mui/material";
 import React from "react";
-import IconUrl from "src/utils/Icon";
+import IconUrl from "../utils/Icon";
 import SigninOrcidCardStyled from "./overrides/signinOrcidCardStyle";
 import ErrorIcon from "@mui/icons-material/Error";
 import { Link, useNavigate } from "react-router-dom";

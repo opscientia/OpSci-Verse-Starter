@@ -1,9 +1,9 @@
 import React from "react";
 import DonateStyled from "./overrides/donateStyle";
 import { Container, Box, Typography, Button, Stack } from "@mui/material";
-import { DonateCard } from "src/features/cards";
+import { DonateCard } from "../features/cards";
 import Slider from "react-slick";
-import useWindowSize from "src/hooks/windowResize";
+import useWindowSize from "../hooks/windowResize";
 
 const settings = {
   infinite: true,

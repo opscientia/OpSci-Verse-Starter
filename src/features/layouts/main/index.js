@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 import React from 'react';
-import { Cookies } from 'src/features/cookies';
-import { Header, Footer } from 'src/features/base';
+import { Cookies } from '../features/cookies';
+import { Header, Footer } from '../features/base';
 
 function MainLayout() {
   return (

@@ -8,13 +8,13 @@ import {
   IconButton,
 } from '@mui/material';
 import React, { useState } from 'react';
-import IconUrl from 'src/utils/Icon';
+import IconUrl from '../utils/Icon';
 import SigninCardStyled from './overrides/signinCardStyle';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { LoadingButton } from '@mui/lab';
-import { userSelector, isAuthenticUser } from 'src/redux/userSlice';
+import { userSelector, isAuthenticUser } from '../redux/userSlice';
 import { useFormik, Form, FormikProvider } from 'formik';
 
 function SigninCard() {

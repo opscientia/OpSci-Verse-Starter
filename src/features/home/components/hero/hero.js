@@ -9,7 +9,7 @@ import {
   Grid,
   Divider,
 } from "@mui/material";
-import Icon from "src/utils/Icon";
+import Icon from "../utils/Icon";
 
 function Hero() {
   return (

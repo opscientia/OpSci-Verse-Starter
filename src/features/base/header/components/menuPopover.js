@@ -2,7 +2,7 @@ import * as React from 'react';
 import Popover from '@mui/material/Popover';
 import { IconButton, Avatar, List, ListItem } from '@mui/material';
 import { useDispatch } from 'react-redux';
-import { setIsAuthentic } from 'src/redux/userSlice';
+import { setIsAuthentic } from '../redux/userSlice';
 export default function MenuPopover({ user }) {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const dispatch = useDispatch();
@@ -28,7 +28,7 @@ export default function MenuPopover({ user }) {
                 <Avatar
                     sx={{ bgcolor: theme => theme.palette.primary.main }}
                     alt="My Avatar"
-                    src={user ? user.cover : "/static/mock-images/avatars/avatar_default.jpg"}
+                    ..={user ? user.cover : "/static/mock-images/avatars/avatar_default.jpg"}
                 />
             </IconButton>
             <Popover

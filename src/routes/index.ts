@@ -1,39 +1,40 @@
-import { useRoutes, Navigate, BrowserRouter } from 'react-router-dom';
+import { useRoutes, Navigate, BrowserRouter } from "react-router-dom";
+
 // layout
-import { MainLayout, AuthLayout } from 'src/features/layouts';
+import { MainLayout, AuthLayout } from "../features/layouts";
 // pages
-import Home from 'src/pages/Home';
-import About from 'src/pages/About';
-import NotFound from 'src/pages/404';
-import Signin from 'src/pages/Signin';
-import Signup from 'src/pages/Signup';
+import Home from "../pages/Home";
+import About from "../pages/About";
+import NotFound from "../pages/404";
+import Signin from "../pages/Signin";
+import Signup from "../pages/Signup";
 
 // ----------------------------------------------------------------------
 
 function Routes() {
   return useRoutes([
     {
-      path: '*',
+      path: "*",
       children: [
-        { path: '404', element: <NotFound /> },
-        { path: '*', element: <Navigate to='/404' replace /> },
+        { path: "404", element: <NotFound /> },
+        { path: "*", element: <Navigate to="/404" replace /> },
       ],
     },
     {
-      path: '/',
+      path: "/",
       element: <MainLayout />,
       children: [
-        { path: '', element: <Home /> },
-        { path: 'about', element: <About /> },
+        { path: "", element: <Home /> },
+        { path: "about", element: <About /> },
       ],
     },
 
     {
-      path: '/auth',
+      path: "/auth",
       element: <AuthLayout />,
       children: [
-        { path: 'signin', element: <Signin /> },
-        { path: 'signup', element: <Signup /> },
+        { path: "signin", element: <Signin /> },
+        { path: "signup", element: <Signup /> },
       ],
     },
   ]);

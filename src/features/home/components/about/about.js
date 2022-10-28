@@ -2,7 +2,7 @@ import React from "react";
 import AboutStyled from "./overrides/aboutStyle";
 import { Container, Stack, Box, Typography, Grid, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import useWindowSize from "src/hooks/windowResize";
+import useWindowSize from "../hooks/windowResize";
 function About() {
   const navigate = useNavigate();
   const [offSetLeft, setOffSetLeft] = React.useState(0);
